@@ -26,5 +26,10 @@ namespace ChatBot.Dialogs
         {
             await context.PostAsync($"Que dois-je envoyer");
         }
+        [LuisIntent("SpagoBi")]
+        public async Task SpagoBi(IDialogContext context, LuisResult result)
+        {
+            await context.PostAsync($"Praise our lord SpagoBi");
+        }
     }
 }
